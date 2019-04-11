@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <title>Hex3V</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="move.js"></script>
 
 </head>
 <body>
@@ -20,6 +21,16 @@
             <h1 class="h1">Ships and Sails</h1>
         </div>
     </div>
+            <img id="boat1" class="img-responsive" src="skib.png" alt="skib">
+            <img id="boat2" class="img-responsive" src="skib2.png" alt="skib">
+            <img id="boat3" class="img-responsive" src="skib3.png" alt="skib">
+
+    <script>
+        // henter metoden fra move.js
+        dragElement(document.getElementById("boat1"));
+        dragElement(document.getElementById("boat2"));
+        dragElement(document.getElementById("boat3"));
+    </script>
 
 
 
