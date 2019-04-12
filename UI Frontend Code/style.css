@@ -40,3 +40,17 @@ body html{
     width: 90px;
 }
 
+#control {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#message {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
