@@ -18,18 +18,18 @@ INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nati
 INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (2, 1, 6, 3, "Holland");
 INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (3, 1, 9, 3, "Holland");
 
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (1, 1, 3, 9, "Tyskland");
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (2, 1, 6, 9, "Tyskland");
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (3, 1, 9, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (4, 1, 3, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (5, 1, 6, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (6, 1, 9, 9, "Tyskland");
 
 #stor bane
 INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (1, 2, 3, 3, "Holland");
 INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (2, 2, 6, 3, "Holland");
 INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (3, 2, 9, 3, "Holland");
 
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (1, 2, 3, 9, "Tyskland");
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (2, 2, 6, 9, "Tyskland");
-INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (3, 2, 9, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (4, 2, 3, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (5, 2, 6, 9, "Tyskland");
+INSERT INTO Skibspositioner (Skibe_idSkib, Scenarie_idScenarie, posX, posY, Nationalitet) VALUES (6, 2, 9, 9, "Tyskland");
 
 
 select * from Skibspositioner;
