@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `sails`.`Skibe` (
   `maxSail` INT NULL,
   `noOfTurns` INT NULL,
   PRIMARY KEY (`idSkib`))
-ENGINE = InnoDB;
+ENGINE = InnoDB;idScenarieskibe
 
 
 -- -----------------------------------------------------
