@@ -29,10 +29,12 @@ public class mainController {
     @GetMapping("/")
     public String index(Model model){
         List<MyImage> images = new ArrayList<>();
-        images.add(new MyImage(1, "camel", 90, 90));
-        images.add(new MyImage(2, "terminator", 305, 407));
-        images.add(new MyImage(3, "camel", 105, 407));
-        images.add(new MyImage(4, "terminator", 290, 90));
+        images.add(new MyImage(1, "Brig", 90, 90));
+        images.add(new MyImage(2, "shipOfLine", 305, 407));
+        images.add(new MyImage(3, "ManOfWar", 198, 248));
+        images.add(new MyImage(4, "Brig", 105, 407));
+        images.add(new MyImage(5, "shipOfLine", 290, 90));
+        images.add(new MyImage(6, "ManOfWar", 380, 190));
         model.addAttribute("images", images);
         model.addAttribute("ships", shipService.fetchAllShips());
         return "Ship-placement";

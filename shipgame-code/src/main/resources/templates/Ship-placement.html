@@ -24,12 +24,24 @@
         </span>
     </div>
     <!-- div control -->
-    <div id="control" style="float: right; width: 200px; height: 200px; background-color: green;">
+    <div id="control" style="float: right; width: 500px; height: 500px; background-color: green;">
         <h1>Control section</h1>
-        <p th:each="ship : ${ships}">
+        <p>ShipId  shipType:</p>
 
+
+        <p th:each="ship : ${ships}">
             <span th:text="${ship.shipId}" />
             <span th:text="${ship.shipType}" />
+            <span th:text="${ship.nationality}" />
+            <span th:text="${ship.name}" />
+            <span th:text="${ship.coordinate}" />
+            <span th:text="${ship.direction}" />
+            <span th:text="${ship.speed}" />
+            <span th:text="${ship.hull_health}" />
+            <span th:text="${ship.sail_health}" />
+            <span th:text="${ship.sailors}" />
+            <span th:text="${ship.load}" />
+            <span th:text="${ship.currentAmmunitionType}" />
 
         </p>
     </div>
