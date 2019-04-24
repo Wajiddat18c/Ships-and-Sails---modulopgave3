@@ -3,11 +3,11 @@ package dk.kea.shipgame.Model;
 public class Ship {
 
     private int shipId;
-    private int shipType;
+    private String shipType;
     private String nationality;
     private String name;
-    private Coordinate coordinate;
-    private Direction direction; //ENUM, N, NE, SE, S, SW, NW
+    private String coordinate;
+    private String direction; //ENUM, N, NE, SE, S, SW, NW
     private int speed; //change: speed last round +/- calculated change
     private int hull_health; //0 - 100%
     private int sail_health; //0 - 100%
@@ -18,7 +18,7 @@ public class Ship {
     public Ship() {
     }
 
-    public Ship(int shipId, int shipType, String nationality, String name, Coordinate coordinate, Direction direction, int speed, int hull_health, int sail_health, int sailors, int load, int currentAmmunitionType) {
+    public Ship(int shipId, String shipType, String nationality, String name, String coordinate, String direction, int speed, int hull_health, int sail_health, int sailors, int load, int currentAmmunitionType) {
         this.shipId = shipId;
         this.shipType = shipType;
         this.nationality = nationality;
@@ -33,14 +33,6 @@ public class Ship {
         this.currentAmmunitionType = currentAmmunitionType;
     }
 
-    public int getCurrentAmmunitionType() {
-        return currentAmmunitionType;
-    }
-
-    public void setCurrentAmmunitionType(int currentAmmunitionType) {
-        this.currentAmmunitionType = currentAmmunitionType;
-    }
-
     public int getShipId() {
         return shipId;
     }
@@ -49,11 +41,11 @@ public class Ship {
         this.shipId = shipId;
     }
 
-    public int getShipType() {
+    public String getShipType() {
         return shipType;
     }
 
-    public void setShipType(int shipType) {
+    public void setShipType(String shipType) {
         this.shipType = shipType;
     }
 
@@ -73,19 +65,19 @@ public class Ship {
         this.name = name;
     }
 
-    public Coordinate getCoordinate() {
+    public String getCoordinate() {
         return coordinate;
     }
 
-    public void setCoordinate(Coordinate coordinate) {
+    public void setCoordinate(String coordinate) {
         this.coordinate = coordinate;
     }
 
-    public Direction getDirection() {
+    public String getDirection() {
         return direction;
     }
 
-    public void setDirection(Direction direction) {
+    public void setDirection(String direction) {
         this.direction = direction;
     }
 
@@ -127,5 +119,13 @@ public class Ship {
 
     public void setLoad(int load) {
         this.load = load;
+    }
+
+    public int getCurrentAmmunitionType() {
+        return currentAmmunitionType;
+    }
+
+    public void setCurrentAmmunitionType(int currentAmmunitionType) {
+        this.currentAmmunitionType = currentAmmunitionType;
     }
 }

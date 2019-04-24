@@ -26,6 +26,12 @@
     <!-- div control -->
     <div id="control" style="float: right; width: 200px; height: 200px; background-color: green;">
         <h1>Control section</h1>
+        <p th:each="ship : ${ships}">
+
+            <span th:text="${ship.shipId}" />
+            <span th:text="${ship.shipType}" />
+
+        </p>
     </div>
     <div id="message" style="float: right; width: 200px; height: 200px; background-color: yellow;">
         <h1>Mesage section</h1>
