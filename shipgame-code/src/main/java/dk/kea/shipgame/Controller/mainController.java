@@ -24,10 +24,6 @@ public class mainController {
         return "shipdata";
     }
 
-    @GetMapping("shipsLoaded")
-    public String shipsLoaded(Model model){
-        model.addAttribute("shipsloaded", serviceShip.createAllShips());
-    }
 
 
     @Autowired

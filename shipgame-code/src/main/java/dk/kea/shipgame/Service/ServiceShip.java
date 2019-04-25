@@ -1,7 +1,6 @@
 package dk.kea.shipgame.Service;
 
 import dk.kea.shipgame.Model.Ship;
-import dk.kea.shipgame.Model.ShipsSingleton;
 import dk.kea.shipgame.Repository.RepoShip;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,14 +20,5 @@ public class ServiceShip {
         return repoShip.findShipById(shipId);
     }
 
-    public void createAllShips(){
-        List<Ship> ships = fetchAllShips();
-        ShipsSingleton shipsSingleton = ShipsSingleton.getInstance();
-
-        for(Ship ship : ships){
-            shipsSingleton.createShip(ship);
-        }
-
-    }
 
 }
