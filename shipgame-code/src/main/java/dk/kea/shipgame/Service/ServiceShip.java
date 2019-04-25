@@ -20,5 +20,9 @@ public class ServiceShip {
         return repoShip.findShipById(shipId);
     }
 
+    public void updateCoordinateShips(List<Ship> ships){
+        repoShip.updateCoordinateShips( List<Ship> ships);
+    }
+
 
 }

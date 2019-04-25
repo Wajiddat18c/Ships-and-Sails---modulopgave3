@@ -32,4 +32,8 @@ public class RepoShip {
       return template.queryForObject(sql, rowMapper, shipId);
    }
 
+   public void updateCoordinateShips(int shipId){
+      //mangler
+   }
+
 }

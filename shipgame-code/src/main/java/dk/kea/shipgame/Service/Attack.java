@@ -12,19 +12,6 @@ public class Attack implements IAttack{
     @Override
     public void resolveAttackOwn(List<Ship> ships, List<Order> orders) {
 
-        for(Ship ship : ships){
-            int shipid = ship.getShipId();
-
-            for(Order order : orders){
-                if(shipid == order.getShipId()){
-
-                    //Attack
-
-
-                }
-            }
-
-        }
     }
 
     @Override
