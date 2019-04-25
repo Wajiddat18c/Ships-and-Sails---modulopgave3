@@ -2,6 +2,7 @@ package dk.kea.shipgame.Model;
 
 import java.util.List;
 
+//klassen bruges istedet for db.
 public class ShipsSingleton {
 
     private static ShipsSingleton instance;

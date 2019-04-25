@@ -23,7 +23,6 @@ public class ServiceShip {
     public Ship findShipById(int shipId){
         return shipRepo.findShipById(shipId);
     }
-    git
     public void createAllShips(){
         ShipsSingleton shipsSingleton = ShipsSingleton.getInstance();
         List<Ship> ships = repoShipsSingleton.getShips();
