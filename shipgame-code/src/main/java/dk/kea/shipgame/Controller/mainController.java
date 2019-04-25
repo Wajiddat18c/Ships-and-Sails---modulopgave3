@@ -1,6 +1,7 @@
 package dk.kea.shipgame.Controller;
 
 import dk.kea.shipgame.Model.MyImage;
+import dk.kea.shipgame.Service.ServiceScenario;
 import dk.kea.shipgame.Service.ServiceShip;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,6 +23,21 @@ public class mainController {
 
         return "shipdata";
     }
+
+    @GetMapping("shipsLoaded")
+    public String shipsLoaded(Model model){
+        model.addAttribute("shipsloaded", serviceShip.createAllShips());
+    }
+
+
+    @Autowired
+    ServiceScenario serviceScenario;
+    @GetMapping("/scenarioLoaded")
+    public String scenarioLoaded(Model model){
+        model.addAttribute("scenarioLoaded", serviceScenario.createScenario());
+        return "scenarioLoaded";
+    }
+
 
 
 
