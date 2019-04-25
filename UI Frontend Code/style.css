@@ -13,6 +13,7 @@ body html{
 
     height: 3279px;
 
+
     width: 2428px;
 }
 /*felt 1*/
@@ -41,7 +42,8 @@ body html{
 }
 
 #control {
-    float: right;
+    position: absolute;
+
     width: 200px;
     height: 200px;
     background-color: green;
