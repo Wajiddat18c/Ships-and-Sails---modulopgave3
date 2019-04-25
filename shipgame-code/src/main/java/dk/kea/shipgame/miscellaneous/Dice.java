@@ -2,16 +2,15 @@ package dk.kea.shipgame.miscellaneous;
 
 public class Dice {
 
-    private int sides;
+    private int dice;
 
-    public Dice(int sides)
+    public Dice()
     {
-        this.sides = sides;
+       roll();
     }
 
-    public int rollDice()
-    {
-        return (int) (Math.random() * sides ) + 1;
+    public void roll(){
+        dice = (int)(Math.random()*3) + 1;
     }
 
 }
