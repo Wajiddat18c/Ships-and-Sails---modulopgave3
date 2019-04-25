@@ -8,3 +8,4 @@ INSERT INTO `sails`.`ships` (`shipId`, `shipType`, `nationality`, `name`, `coord
 
 
 select * from ships;
+select * from loadedShips;

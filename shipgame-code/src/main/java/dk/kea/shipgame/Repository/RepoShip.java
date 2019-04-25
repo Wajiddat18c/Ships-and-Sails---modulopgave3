@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class ShipRepo {
+public class RepoShip {
 
    @Autowired
    JdbcTemplate template;

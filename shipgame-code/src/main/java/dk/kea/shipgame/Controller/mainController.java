@@ -1,7 +1,8 @@
 package dk.kea.shipgame.Controller;
 
 import dk.kea.shipgame.Model.MyImage;
-import dk.kea.shipgame.Service.ShipService;
+import dk.kea.shipgame.Service.ServiceScenario;
+import dk.kea.shipgame.Service.ServiceShip;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,14 +15,29 @@ import java.util.List;
 public class mainController {
 
     @Autowired
-    ShipService shipService;
+    ServiceShip serviceShip;
 
     @GetMapping("/shipdata")
     public String shipData(Model model) {
-        model.addAttribute("ships", shipService.fetchAllShips());
+        model.addAttribute("ships", serviceShip.fetchAllShips());
 
         return "shipdata";
     }
+
+    @GetMapping("shipsLoaded")
+    public String shipsLoaded(Model model){
+        model.addAttribute("shipsloaded", serviceShip.createAllShips());
+    }
+
+
+    @Autowired
+    ServiceScenario serviceScenario;
+    @GetMapping("/scenarioLoaded")
+    public String scenarioLoaded(Model model){
+        model.addAttribute("scenarioLoaded", serviceScenario.createScenario());
+        return "scenarioLoaded";
+    }
+
 
 
 
@@ -36,7 +52,7 @@ public class mainController {
         images.add(new MyImage(5, "shipOfLine", 290, 90));
         images.add(new MyImage(6, "ManOfWar", 380, 190));
         model.addAttribute("images", images);
-        model.addAttribute("ships", shipService.fetchAllShips());
+        model.addAttribute("ships", serviceShip.fetchAllShips());
         return "Ship-placement";
     }
 }
