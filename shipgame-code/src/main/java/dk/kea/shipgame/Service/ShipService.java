@@ -1,7 +1,7 @@
 package dk.kea.shipgame.Service;
 
 import dk.kea.shipgame.Model.Ship;
-import dk.kea.shipgame.repository.ShipRepo;
+import dk.kea.shipgame.Repository.ShipRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

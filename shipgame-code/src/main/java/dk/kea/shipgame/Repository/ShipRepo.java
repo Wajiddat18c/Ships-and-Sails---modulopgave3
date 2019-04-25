@@ -1,5 +1,5 @@
 
-package dk.kea.shipgame.repository;
+package dk.kea.shipgame.Repository;
 
 import dk.kea.shipgame.Model.Ship;
 import org.springframework.beans.factory.annotation.Autowired;
