@@ -1,0 +1,58 @@
+body html{
+    margin: 0;
+    padding: 0;
+}
+.backgroundimg{
+    background-image: url("Ocean_24_24.png");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    height: 3279px;
+
+
+    width: 2428px;
+}
+/*felt 1*/
+#boat1{
+    left: 15px;
+    position: absolute;
+    top: 90px;
+    height: 90px;
+    width: 90px;
+}
+/*felt 2*/
+#boat2{
+    left: 110px;
+    position: absolute;
+    top: 10px;
+    height: 90px;
+    width: 90px;
+}
+/*felt 3*/
+#boat3{
+    left: 110px;
+    position: absolute;
+    top: 150px;
+    height: 90px;
+    width: 90px;
+}
+
+#control {
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#message {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
