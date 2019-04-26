@@ -1,4 +1,4 @@
-package dk.kea.shipgame.miscellaneous;
+package dk.kea.shipgame.Service;
 
 public class Dice {
 

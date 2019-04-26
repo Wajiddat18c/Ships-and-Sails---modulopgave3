@@ -2,13 +2,10 @@ package dk.kea.shipgame.Service;
 
 import dk.kea.shipgame.Model.Order;
 import dk.kea.shipgame.Model.Ship;
-import dk.kea.shipgame.miscellaneous.Gun;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-import static dk.kea.shipgame.miscellaneous.Dice.rollGun;
+import static dk.kea.shipgame.Service.Dice.rollGun;
 
 public class Attack implements IAttack{
 
