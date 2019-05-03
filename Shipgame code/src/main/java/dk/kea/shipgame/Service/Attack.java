@@ -21,14 +21,15 @@ public class Attack implements IAttack{
             for(Order order : orders){
 
                 if(shipId == order.getShipId()){
+                    Gun gun = new Gun();
+                    boolean fire = order.isFire();
+
 
                     int currentSailors = ships.get(i).getSailors();
                     int currentHull = ships.get(i).getHull_health();
                     int currentSail = ships.get(i).getSail_health();
-                    boolean fire = order.isFire();
                     int currentAmmonitiontype = ships.get(i).getCurrentAmmunitionType();
 
-                    Gun gun = new Gun();
                     int newHull = gun.CalculateHullDamage(dice, currentHull, currentAmmonitiontype);
                     int newSailors = gun.CalculateSailors(dice, currentSailors, currentAmmonitiontype);
                     int newSailHealth = gun.CalculateSailHealth(dice, currentSail, currentAmmonitiontype);

@@ -22,6 +22,9 @@ public class Gun {
             CurrentHull = CurrentHull;
             return CurrentHull;
         }
+        else {
+            System.out.println("FEJL");
+        }
 
         return CalculateSailHealth(dice, CurrentHull, currentAmmunitionType);
 

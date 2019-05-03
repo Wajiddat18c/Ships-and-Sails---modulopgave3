@@ -102,6 +102,10 @@ public class Move implements IMove {
 
         }
 
+    /**
+     *
+     * @param
+     */
     private void chkForCollision(){
 
         //check om skibe står på samme felt.
