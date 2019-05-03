@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Ships</title>
+    <style>
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div sektioner kan bruges til at dele skærmen op -->
+    <!-- brug Bootstrap Layout - containers for at få det til at fungere -->
+    <!-- div board -->
+    <div id="board" style="width:600px; height:500px; float:left;">
+        <img id="board" src="/img/Ocean_24_24.png" style="width:100%; height:100%;">
+        <!-- for each image -->
+        <span th:each="image: ${images}">
+            <!-- brug image med navn på skib - kan også være sammensat af flere attributer (direction og nation) -->
+            <!-- placer ud fra koordinat - skal være udregnet til pixels -->
+            <img th:src="@{'/img/' + ${image.name} + '.jpg'}" th:style="${'position:absolute; TOP:' + image.top +'px; LEFT:' + image.left + 'px;'}"  />
+        </span>
+    </div>
+    <!-- div control -->
+    <div id="control" style="float: right; width: 500px; height: 500px; background-color: green;">
+        <h1>Control section</h1>
+        <p>ShipId  shipType:</p>
+
+
+        <p th:each="ship : ${ships}">
+            <span th:text="${ship.shipId}" />
+            <span th:text="${ship.shipType}" />
+            <span th:text="${ship.nationality}" />
+            <span th:text="${ship.name}" />
+            <span th:text="${ship.coordinate}" />
+            <span th:text="${ship.direction}" />
+            <span th:text="${ship.speed}" />
+            <span th:text="${ship.hull_health}" />
+            <span th:text="${ship.sail_health}" />
+            <span th:text="${ship.sailors}" />
+            <span th:text="${ship.load}" />
+            <span th:text="${ship.currentAmmunitionType}" />
+
+        </p>
+    </div>
+    <div id="message" style="float: right; width: 200px; height: 200px; background-color: yellow;">
+        <h1>Mesage section</h1>
+    </div>
+</body>
+</html>
